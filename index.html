@@ -23,30 +23,28 @@
       text-shadow: 2px 2px 8px rgba(255, 182, 193, 0.8);
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      width: 80%;
-      margin: 40px auto;
-    }
+   .gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;              /* smaller gap */
+  width: 60%;             /* was 80% */
+  margin: 30px auto;
+}
 
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease;
-    }
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;    /* softer corners */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
 
     .gallery img:hover {
       transform: scale(1.05);
     }
 
-    /* Make the middle photo bigger */
-    .gallery img.center {
-      grid-column: span 2;
-    }
+   
 
     .message {
       text-align: center;
